@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Cabin">
+  <link rel="stylesheet" href="./assets/reset.css">
+  <link rel="stylesheet" href="./assets/style.css">
+  <title>Jake Lauterstein Portfolio
+  </title>
+</head>
+<body>
+  <header>
+    <nav>
+      <ul class='flex-col'>
+        <li>
+          <h1>Jacob Lauterstein – Web Developer</h1>
+        </li>
+        <div class='flex'>
+        <li>
+          <a href="#about">About Me</a>
+        </li>
+        <li>
+          <a href="#projects">Projects</a> 
+        </li>
+        <li>
+          <a href="#expertise">Areas of Expertise</a> 
+        </li>
+        <li>
+          <a href="#contact">Contact Me</a> 
+        </li>
+      </div>
+    </ul>
+    </nav>
+  </header>
+
+
+  <main>
+    <!-- ABOUT SECTION -->
+    <section class='flex section about' id='about'>
+      <div>
+        <img class='headshot' src="./assets/images/banner-plus-hs.png" alt="">
+      </div>
+          <div class="about-text-cont">
+           
+            <h2 class='section-title about-title'>About Me</h2>
+            <p class='about-copy'>
+              Drawing from a diverse professional background in full-stack web development, education, and the service industry, I approach web development with creative problem-solving and scalable architecture. I specialize in collaborating with designers to build responsive websites that create a seamless experience for all users. With experience across the spectrum of Digital Marketing, UX/UI, and full-stack technology, I am excited to bring a business-forward approach to meet and exceed my clients' online goals.
+            </p>
+          </div>
+
+    </section>
+    <!-- PROJECT SECTION -->
+    <section class='section projects' id='projects'>
+      <h2 class='section-title projects-title'>Projects</h2>
+      <div class='article-cont'>
+      <article>
+        <img class='project-img' src="./assets/images/maecenas-devs.jpg" alt="blog site">
+        <h2>Maecenas Devs</h2>
+        <p>A subscription-based educational blog where bootcamp graduates reflect on their experience in the modern coding bootcamp. Project utilizes MongoDB, Express.js, React, and Node.</p>
+      </article>
+      <article>
+        <img class='project-img' src="./assets/images/books-of-alexandria.jpg" alt="ecommerce site">
+        <h2>Books of Alexandria</h2>
+        <p>A full stack ecommerce application for a demo online retail bookseller. Includes signup, login, and logout authentication as well as Handlebars.js, Express.js, and MySQL.</p>
+      </article>
+      <article>
+        <img class='project-img' src="./assets/images/trip-advisor.jpg" alt="travel advisor site">
+        <h2>Travel Advisor</h2>
+        <p>An API-fueled travel site providing destination information including upcoming flights and local attractions. Project utilizes HTML, CSS, Javascript, and interactive API calls.</p>
+      </article>
+    </div>
+    </section>
+     <!-- EXPERTISE SECTION -->
+    <section class='section expertise' id='expertise'>
+      <h2 class='section-title expertise-title'>Areas of Expertise</h2>
+      <div class='software-img'>
+        <img src="./assets/images/software-all.png" alt="web development software">
+      </div>
+    </section>
+     <!-- CONTACT SECTION -->
+    <section class='section contact' id='contact'>
+      <h2 class='section-title contact-title'>Contact Me</h2>
+
+      <form action="https://formsubmit.co/jakelauterstein@gmail.com" method="POST">
+        <input type="email" name="email" placeholder="Email Address" required>
+        <input type="hidden" name="_next" value="https://yourdomain.co/thanks.html">
+        <input type="text" name="name" placeholder="name" required>
+        <input type="email" name="email" required>
+        <button type="submit">Send</button>
+      </form>
+      
+    </section>
+    <footer>
+
+    </footer>
+  </main>
+  
+</body>
+</html>
