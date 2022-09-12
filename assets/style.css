@@ -47,11 +47,13 @@ p {
 /* BEGIN ELEMENT CLASSES */
 
 h1 {
+  text-align: center;
   font-size: 2rem;
   margin: 10px;
 }
 
 h2{
+  text-align: center;
   font-size: 1.6rem;
   margin: 10px;
 }
@@ -68,7 +70,8 @@ p {
 }
 
 nav {
-  margin: 30px;
+  margin: 60px;
+  
 }
 
 /* BEGIN HERO STYLES */
@@ -158,8 +161,10 @@ article img {
 }
 
 .software-img {
+  display: flex;
+  justify-content: center;
   background: var(--grad-bg); 
-  margin: 10px 80px;
+  margin: 20px 80px;
   border-radius: 40px;
 }
 
@@ -202,8 +207,8 @@ form {
 
 form input {
   margin: 5px;
-  padding: 10px;
-  width: 50%;
+  padding: 15px;
+  width: 65%;
   border-radius: 10px;
   border: none;
   background-color: rgb(190, 212, 255);
@@ -234,4 +239,216 @@ footer {
   color: white;
 }
 
+/* BEGIN RESPONSIVE STYLES */
 
+
+/* On screens that are 830px or less, set the background color to blue */
+@media screen and (max-width: 830px) {
+
+  .about {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 60px;
+  }
+
+  .projects {
+    padding: 20px;
+    margin-bottom: 30px;
+  }
+
+  .projects-title {
+    text-align: center;
+   
+  }
+  
+  .article-cont {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    padding: 10px 30px;
+    margin-top: 10px;
+  }
+
+  article{
+    padding: 30px;
+    margin: 30px;
+  } 
+
+  article h2 {
+    margin-top: 2px;
+  }
+
+  .contact {
+    width: 90%;
+    margin: 0 auto 20px auto;
+  }
+  
+  
+  .contact-title {
+    text-align: center;
+    padding: 20px;
+  }
+  
+  .form-container {
+    padding: 40px 60px;
+    background: var(--grad-bg);
+    border-radius: 30px;
+  }
+  
+  form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  form input {
+    margin: 5px;
+    padding: 10px;
+    width: 80%;
+    border-radius: 10px;
+    border: none;
+    background-color: rgb(190, 212, 255);
+  }
+  
+  form button {
+    margin: 10px;
+    padding: 20px;
+    width: 40%;
+    background-color: rgb(62, 136, 254);
+    border-radius: 20px;
+    border: none;
+    color: white;
+  }
+  
+  .textarea {
+    height: 40px;
+    border-radius: 10px;
+    margin-bottom: 25px;
+  }
+  
+  footer {
+    margin-top: 50px;
+  }
+  
+}
+
+/* On screens that are 500px or less, set the background color to olive */
+@media screen and (max-width: 500px) {
+  
+  h1 {
+    text-align: center;
+    font-size: 3.0rem;
+  }
+
+  h2 {
+    text-align: center;
+  }
+
+  .nav-links {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .nav-links li {
+    font-size: 0.5rem;
+    margin: 5px;
+  }
+
+  nav {
+    margin: 10px;
+    margin-bottom: 20px;
+  }
+
+  .about-text-cont {
+   
+      padding: 20px;
+      margin: 20px;
+      
+  }
+
+  .projects {
+    padding: 10px;
+    margin-bottom: 20px;
+  }
+  
+  .article-cont {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    padding: 10px 20px;
+    margin-top: 10px;
+  }
+
+  article{
+    padding: 15px;
+    margin: 15px;
+  } 
+
+  .projects h2 {
+    margin-top: 15px;
+  }
+
+  .expertise {
+    margin-bottom: 85px;
+  }
+  
+  .software-img {
+    display: flex;
+    justify-content: center;
+    background: var(--grad-bg); 
+    margin: 20px 10px;
+    border-radius: 40px;
+  }
+  
+  .software-img img {
+    padding: 10px 10px;
+    width: 100%;
+  }
+  
+  .expertise-title {
+    text-align: center;
+    padding: 20px;
+  }
+
+  .contact {
+    width: 90%;
+    margin: 0 auto 20px auto;
+  }
+  
+  
+  .contact-title {
+    text-align: center;
+    padding: 20px;
+  }
+  
+  .form-container {
+    padding: 20px 30px;
+    background: var(--grad-bg);
+    border-radius: 30px;
+  }
+  
+ 
+  form input {
+    margin: 10px;
+    padding: 20px;
+    width: 90%;
+    border-radius: 10px;
+  }
+  
+  form button {
+    margin: 10px;
+    padding: 20px;
+    width: 60%;
+  }
+  
+  .textarea {
+    height: 40px;
+    border-radius: 10px;
+    margin-bottom: 25px;
+  }
+  
+  
+}
